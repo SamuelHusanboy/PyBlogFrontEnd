@@ -630,3 +630,106 @@ header.scrolled {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.main-posts_sidebar_filter {
+    border-radius: 16px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    background: var(--color-white);
+}
+
+.main-posts_sidebar_header {
+    padding: 13px 25px;
+    box-shadow: var(--local-box-shadow);
+    background: var(--color-white);
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-posts_sidebar_item {
+    font-size: var(--size-text-big);
+    color: var(--color-dark);
+    font-family: 'Poppins M';
+}
+
+.main-posts_sidebar_item i {
+    font-size: var(--size-text-big);
+    color: var(--color-dark);
+}
+
+.main-posts_sort_list_opener {
+    box-shadow: var(--local-box-shadow);
+    background: var(--color-white);
+    display: flex;
+    padding: 5px 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-posts_sort_list_opener i {
+    color: var(--color-blue);
+}
+
+.main-posts_sort_list i:nth-child(1) {
+    margin-right: 5px;
+}
+
+.main-posts_sort {
+    padding: 5px 25px;
+    box-shadow: var(--local-box-shadow);
+    background: var(--color-white);
+}
+
+.main-posts_sort_item i {
+    margin-right: 5px;
+    color: var(--color-blue);
+}
+
+.main-posts_sort_item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.main-posts_sort_item::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+    border: 2px solid var(--color-blue);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-posts_sort_item::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    position: absolute;
+    background: var(--color-blue);
+    border-radius: 50%;
+    right: 4px;
+    display: none;
+}
+
+.main-posts_sort_item.selected::after {
+    display: block;
+}
+
+.main-posts_sort input[type="checkbox"] {
+    display: none;
+}
+
+.main-posts_sort_list_opener.selected .main-posts_sort_item_opener:nth-child(2) i {
+    transform: rotate(180deg);
+}

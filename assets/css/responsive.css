@@ -93,6 +93,14 @@
     .swiper {
         margin-top: 20px;
     }
+
+    .main-posts_sidebar {
+        display: none;
+    }
+
+    .main-posts_list {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -218,6 +226,19 @@
         --size-heading-small: 26px;
         --size-heading: 30px;
         --size-heading-big: 36px;
+    }
+
+    .main-posts_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-post_info_list {
+        width: 100%;
+    }
+
+    .main-posts_item_img {
+        width: 100%;
     }
 }
 
