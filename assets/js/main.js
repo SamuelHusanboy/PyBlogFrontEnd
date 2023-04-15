@@ -89,8 +89,6 @@ posts_sort_list_opener.forEach(element => {
             nextel.style.padding = `5px 25px`
             nextel.style.maxHeight = `${nextel.scrollHeight}px`
         }
-
-        console.log(nextel.style.maxHeight);
     })
 });
 
