@@ -51,3 +51,53 @@ window.addEventListener("resize", () => {
     max = Math.max.apply(null, nums)
     my_swiper.style.height = `${max + 40}px`
 })
+
+let posts_sort_list_opener = document.querySelectorAll(".main-posts_sort_list_opener")
+let posts_sort = document.querySelectorAll(".main-posts_sort")
+
+posts_sort_list_opener.forEach(element => {
+    index = 0
+    element.addEventListener("click", () => {
+        nextel = element.nextElementSibling
+        if (nextel.style.maxHeight == "0px") {
+            posts_sort.forEach(item => {
+                item.style.maxHeight = null
+                item.style.padding = `0`
+                item.style.maxHeight = 0
+            });
+
+            nextel.style.padding = `5px 25px`
+            nextel.style.maxHeight = `${nextel.scrollHeight}px`
+
+        } else if (nextel.style.maxHeight) {
+            posts_sort.forEach(item => {
+                item.style.maxHeight = null
+                item.style.maxHeight = 0
+            });
+            setTimeout(() => {
+                nextel.style.padding = `0`
+            }, 500)
+            nextel.style.maxHeight = null
+            nextel.style.maxHeight = 0
+        } else {
+            posts_sort.forEach(item => {
+                item.style.maxHeight = null
+                item.style.padding = `0`
+                item.style.maxHeight = 0
+            });
+
+            nextel.style.padding = `5px 25px`
+            nextel.style.maxHeight = `${nextel.scrollHeight}px`
+        }
+
+        console.log(nextel.style.maxHeight);
+    })
+});
+
+let posts_sort_item = document.querySelectorAll(".main-posts_sort_item")
+
+posts_sort_item.forEach(element => {
+    element.addEventListener("click", () => {
+        element.classList.toggle("selected")
+    })
+});

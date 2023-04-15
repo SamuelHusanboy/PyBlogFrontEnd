@@ -240,6 +240,10 @@
     .main-posts_item_img {
         width: 100%;
     }
+
+    .main-posts_img_wrapper {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -260,6 +264,51 @@
     .main-hero_slide_emoji_wrapp {
         display: none;
     }
+
+    .main-posts_item {
+        display: flex;
+    }
+
+    .main-post_top_info {
+        order: 1000;
+    }
+
+    .main-post_info_item.title {
+        order: 10;
+    }
+
+    .main-post_info_item.emoji_wrapp {
+        order: 11;
+    }
+
+    .main-post_top_item.prog_lang {
+        position: absolute;
+        top: 20px;
+    }
+
+    .main-post_top_info>li:nth-child(2) {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        left: 0;
+        padding: 0 30px;
+    }
+
+    .main-posts_top_list {
+        position: relative;
+        display: flex !important;
+        flex-direction: row;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .main-post_top_item.date {
+        margin: 0;
+    }
+
+    .main-posts_item {
+        padding-top: 50px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -269,12 +318,12 @@
         --size-text: 16px;
         --size-text-average: 18px;
         --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-text-large: 23px;
 
         /* Heading Sizes */
-        --size-heading-small: 26px;
-        --size-heading: 30px;
-        --size-heading-big: 36px;
+        --size-heading-small: 25px;
+        --size-heading: 28px;
+        --size-heading-big: 34px;
     }
 
     .main-hero_item {
@@ -289,8 +338,6 @@
     .main-hero_slide_block {
         position: relative;
     }
-
-
 
     .main-hero_slide_item_right {
         margin: 40px 0 0 0;
@@ -345,6 +392,10 @@
         width: 100% !important;
         white-space: nowrap;
     }
+
+    .main-post_info_item.emoji_wrapp {
+        display: none;
+    }
 }
 
 
@@ -355,15 +406,13 @@
         --size-text: 16px;
         --size-text-average: 18px;
         --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-text-large: 22px;
 
         /* Heading Sizes */
-        --size-heading-small: 26px;
-        --size-heading: 30px;
-        --size-heading-big: 36px;
+        --size-heading-small: 24px;
+        --size-heading: 26px;
+        --size-heading-big: 32px;
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
@@ -371,14 +420,14 @@
         /* Text Sizes */
         --size-text-small: 14px;
         --size-text: 16px;
-        --size-text-average: 18px;
-        --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-text-average: 17px;
+        --size-text-big: 18px;
+        --size-text-large: 20px;
 
         /* Heading Sizes */
-        --size-heading-small: 26px;
-        --size-heading: 30px;
-        --size-heading-big: 36px;
+        --size-heading-small: 22px;
+        --size-heading: 24px;
+        --size-heading-big: 30px;
     }
 
     .main-hero {
@@ -389,31 +438,31 @@
 @media screen and (max-width: 400px) {
     :root {
         /* Text Sizes */
-        --size-text-small: 14px;
-        --size-text: 16px;
-        --size-text-average: 18px;
-        --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-text-small: 13px;
+        --size-text: 15px;
+        --size-text-average: 16px;
+        --size-text-big: 17px;
+        --size-text-large: 18px;
 
         /* Heading Sizes */
-        --size-heading-small: 26px;
-        --size-heading: 30px;
-        --size-heading-big: 36px;
+        --size-heading-small: 20px;
+        --size-heading: 22px;
+        --size-heading-big: 28px;
     }
 }
 
 @media screen and (max-width: 300px) {
     :root {
         /* Text Sizes */
-        --size-text-small: 14px;
-        --size-text: 16px;
-        --size-text-average: 18px;
-        --size-text-big: 20px;
-        --size-text-large: 24px;
+        --size-text-small: 12px;
+        --size-text: 14px;
+        --size-text-average: 15px;
+        --size-text-big: 16px;
+        --size-text-large: 16px;
 
         /* Heading Sizes */
-        --size-heading-small: 26px;
-        --size-heading: 30px;
-        --size-heading-big: 36px;
+        --size-heading-small: 18px;
+        --size-heading: 18px;
+        --size-heading-big: 26px;
     }
 }
