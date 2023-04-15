@@ -23,41 +23,6 @@
     src: url('../fonts/Poppins-Regular.ttf');
 }
 
-html.dark:root {
-    /* Colors */
-    --color-white: #2b2b2b;
-    --color-black: #ffffff;
-    --color-light-gray-bg: #DFE0E2;
-    --color-dark: #27272A;
-    --color-light-text-mode: #ffffff;
-    --color-dark-mode-text: #303634;
-    --color-light-mode-blue: #FDE68A;
-    --color-light-mode-yellow: #297D98;
-    --color-dark-mode-yellow: #FDE68A;
-    --color-blue: #3571A3;
-    --color-yellow: #FFDF76;
-    --color-black-opacitied: #00000053;
-    --color-logo-orange: #E9CD68;
-    --color-logo-blue: #297D98;
-    --color-logo-dark: #585252;
-    --color-subtext: #FFF7ED;
-    --color-light-bg: #303634;
-    --local-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-
-    /* Text Sizes */
-    --size-text-small: 14px;
-    --size-text: 16px;
-    --size-text-average: 18px;
-    --size-text-big: 20px;
-    --size-text-large: 24px;
-
-    /* Heading Sizes */
-    --size-heading-small: 26px;
-    --size-heading: 30px;
-    --size-heading-big: 36px;
-}
-
-
 :root {
     /* Colors */
     --color-white: #FFFFFF;
@@ -126,6 +91,7 @@ header {
     top: 0;
     left: 0;
     background: transparent;
+    z-index: 10000;
 }
 
 header.scrolled {
@@ -255,4 +221,277 @@ header.scrolled {
 
 .header_settings_item.mobile {
     display: none;
+}
+
+.main-hero {
+    padding-top: 130px;
+}
+
+
+.main-hero_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+}
+
+.main-hero_item {
+    width: 20%;
+}
+
+.main-hero_item:nth-child(2) {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-hero_item:nth-child(1) {
+    padding: 15px;
+    background: var(--color-white);
+    border-radius: 16px;
+    box-shadow: var(--local-box-shadow);
+}
+
+.main-instagram_item.img img {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.main-instagram_item.title {
+    font-size: var(--size-text-large);
+    text-align: center;
+    font-family: 'Poppins M';
+}
+
+.main-instagram_item.link {
+    margin: 21px 0;
+}
+
+.main-instagram_item.link a {
+    color: #F59F3A;
+}
+
+.border_shadow {
+    border-radius: 16px;
+    box-shadow: var(--local-box-shadow);
+    background: var(--color-white);
+}
+
+.main-hero_top_block {
+    font-size: var(--size-heading-big);
+    color: var(--color-black);
+    padding: 20px 68px;
+}
+
+.main-hero_top_block span {
+    font-size: var(--size-heading-big);
+    color: var(--color-blue);
+}
+
+.main-hero_top_block span:nth-child(1) {
+    font-size: var(--size-heading-big);
+    color: var(--color-yellow);
+}
+
+.main-hero_slide_top_item.views {
+    font-size: var(--size-text);
+    color: var(--color-blue);
+}
+
+.main-hero_slide_top_item.views i {
+    margin-right: 5px;
+}
+
+.main-hero_item.advertise {
+    padding: 15px 15px 30px 15px;
+}
+
+.main-hero_item.advertise img {
+    width: 100%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-top: 5%;
+}
+
+.main-hero_slide_top_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-hero_slide_top_item:nth-child(1) {
+    width: 30%;
+    display: flex;
+    justify-content: start;
+}
+
+.main-hero_slide_top_item {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+.main-hero_slide_item_right {
+    margin-left: 4%;
+}
+
+.main-hero_slide_top_item.prog_lang,
+.main-hero_slide_top_item.prog_lang i {
+    color: var(--color-blue);
+}
+
+.main-hero_slide_top_item.prog_lang i {
+    margin-right: 5px;
+}
+
+.main-hero_slide_block {
+    padding: 25px;
+}
+
+.main-hero_slide_list {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 10px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-black-opacitied) !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--color-blue) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    color: var(--color-black-opacitied) !important;
+}
+
+.swiper-button-prev:hover i,
+.swiper-button-next:hover i {
+    color: var(--color-dark) !important;
+}
+
+.swiper-button-prev {
+    left: -0px !important;
+}
+
+.swiper-button-next {
+    right: -0px !important;
+}
+
+.main-hero_slide_emoji_list {
+    display: flex;
+}
+
+.main-hero_slide_title a {
+    font-size: var(--size-text-large);
+    color: var(--color-dark);
+}
+
+.main-hero_slide_title a:hover {
+    color: var(--color-blue);
+}
+
+.main-hero_slide_emoji_list {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.main-hero_slide_emoji_item {
+    width: 40px;
+    height: 40px;
+    background: var(--color-white);
+    box-shadow: var(--local-box-shadow);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-hero_slide_emoji_item span {
+    color: var(--color-blue);
+    position: absolute;
+    top: -5px;
+    right: -15px;
+}
+
+.main-advertise_item.title {
+    margin: 12px 0 23px 0;
+    font-size: var(--size-text-average);
+    color: var(--color-dark);
+    font-family: 'Poppins M';
+}
+
+.main-advertise_item.description {
+    font-size: var(--size-text);
+}
+
+.main-advertise_item.link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-advertise_item.link a {
+    text-align: center;
+    padding: 12px 47px;
+    background: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 16px;
+}
+
+.main-advertise_item.link a:hover {
+    transform: scale(0.9);
+    background: var(--color-yellow);
+    color: var(--color-dark);
+}
+
+.main-hero_slide_emoji_wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.main-hero_slide_emoji_wrapp a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--color-blue);
+    box-shadow: var(--local-box-shadow);
+}
+
+.main-hero_slide_emoji_wrapp a i {
+    font-size: var(--size-text-large);
+}
+
+.main-hero_slide_emoji_wrapp a:hover {
+    background: var(--color-yellow);
+}
+
+.main-hero_slide_emoji_wrapp a:hover i {
+    color: var(--color-dark);
 }

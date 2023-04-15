@@ -31,3 +31,15 @@ window.addEventListener("DOMContentLoaded", () => {
         header_settings_item_mode.firstElementChild.classList.add("fa-moon")
     }
 })
+let slides = document.querySelectorAll(".main-hero_slide_block")
+my_swiper = document.querySelector(".swiper")
+
+window.addEventListener("scroll", () => {
+    nums = []
+    slides.forEach((el) => {
+        nums.push(el.getBoundingClientRect().height)
+    })
+    console.log(nums);
+    max = Math.max.apply(null, nums)
+    my_swiper.style.height = `${max + 40}px`
+})
