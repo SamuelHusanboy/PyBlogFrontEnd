@@ -495,3 +495,138 @@ header.scrolled {
 .main-hero_slide_emoji_wrapp a:hover i {
     color: var(--color-dark);
 }
+
+.main-posts {
+    padding-top: 50px;
+
+}
+
+.main-posts_item {
+    padding: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-posts_item_img {
+    width: 33%;
+}
+
+.main-posts_sidebar {
+    width: 20%;
+}
+
+.main-posts_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-posts_list {
+    width: 75%;
+}
+
+.main-post_info_list {
+    width: 65%;
+}
+
+.main-post_info_emoji_list {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.main-post_top_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.main-post_top_item.prog_lang {
+    color: var(--color-blue);
+}
+
+.main-post_info_item.title {
+    margin-bottom: 24px;
+}
+
+.main-post_info_item.title a {
+    font-size: var(--size-heading);
+    color: var(--color-dark);
+    font-family: 'Poppins M';
+}
+
+.main-post_info_item.title a:hover {
+    color: var(--color-blue);
+}
+
+.main-post_top_item_min_info {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.main-post_top_item.views {
+    /* position: absolute; */
+    bottom: 30px;
+    right: 30px;
+    color: var(--color-blue);
+    font-size: var(--size-text);
+}
+
+.main-post_top_info ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-post_top_item.date {
+    font-size: var(--size-text);
+    color: var(--color-subtext);
+    font-family: 'Poppins M';
+    margin-right: 10px;
+}
+
+.main-post_info_item.description {
+    font-family: 'Inter R';
+    color: var(--color-dark);
+    margin-bottom: 40px;
+    font-size: var(--size-text);
+}
+
+.main-post_info_emoji_item {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: var(--color-white);
+    color: var(--color-blue);
+    box-shadow: var(--local-box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.main-post_info_emoji_item span {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+}
+
+.main-post_info_item.emoji_wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-post_info_flame {
+    width: 72px;
+    height: 72px;
+    background: var(--color-white);
+    box-shadow: var(--local-box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
