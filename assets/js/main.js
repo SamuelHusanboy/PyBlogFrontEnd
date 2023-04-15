@@ -39,7 +39,15 @@ window.addEventListener("scroll", () => {
     slides.forEach((el) => {
         nums.push(el.getBoundingClientRect().height)
     })
-    console.log(nums);
+    max = Math.max.apply(null, nums)
+    my_swiper.style.height = `${max + 40}px`
+})
+
+window.addEventListener("resize", () => {
+    nums = []
+    slides.forEach((el) => {
+        nums.push(el.getBoundingClientRect().height)
+    })
     max = Math.max.apply(null, nums)
     my_swiper.style.height = `${max + 40}px`
 })

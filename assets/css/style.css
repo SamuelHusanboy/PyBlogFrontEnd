@@ -227,11 +227,11 @@ header.scrolled {
     padding-top: 130px;
 }
 
-
 .main-hero_list {
     display: flex;
     justify-content: space-between;
     align-items: self-start;
+    flex-wrap: wrap;
 }
 
 .main-hero_item {
