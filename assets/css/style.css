@@ -1059,3 +1059,126 @@ footer {
 .detail-body {
     color: var(--color-dark);
 }
+
+.detail-post_info_wrapper {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.detail-info_list {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.detail-emoji_item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-white);
+    box-shadow: var(--local-box-shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 15px;
+}
+
+.detail-emoji_item span {
+    position: absolute;
+    color: var(--color-blue);
+    top: -10px;
+    right: -20px;
+}
+
+.detail-emoji_list {
+    display: flex;
+    align-items: center;
+}
+
+.detail-info_item {
+    width: 47%;
+}
+
+.detail-post_info_author {
+    color: var(--color-blue);
+    font-family: 'Inter R';
+}
+
+.detail-post_info_wrapper span span:nth-child(2) {
+    margin-left: 25px;
+}
+
+.detail-post_info_wrapper span {
+    color: var(--color-blue);
+}
+
+.detail-post_tag_heading {
+    font-size: var(--size-text-large);
+    color: var(--color-dark);
+}
+
+.detail-tag_list {
+    width: 60%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.detail-tag_item {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.detail-tag_item:nth-child(1) {
+    margin-left: 0px;
+}
+
+.detail-tag_item a {
+    padding: 5px 10px;
+    box-shadow: var(--local-box-shadow);
+    border-radius: 16px;
+    background: var(--color-white);
+    color: var(--color-blue);
+}
+
+.detail-tag_item a i {
+    color: var(--color-blue);
+}
+
+.detail-tag_item a:hover {
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+.detail-tag_item a:hover i {
+    color: var(--color-white);
+}
+
+.detail-share_item a {
+    display: flex;
+    align-items: center;
+}
+
+.detail-share_list {
+    margin-top: 30px;
+    display: flex;
+}
+
+.detail-share_item:nth-child(2) {
+    margin-left: 20px;
+}
+
+.detail-share_list img {
+    margin-right: 10px;
+}
+
+.detail-share_item a {
+    color: var(--color-dark);
+}
+
+.detail-share_item a:hover {
+    color: var(--color-blue);
+}
