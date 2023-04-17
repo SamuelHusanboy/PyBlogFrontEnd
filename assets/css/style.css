@@ -1337,3 +1337,20 @@ footer {
 .detail-post {
     padding-bottom: 70px;
 }
+
+.detail-lower_wrapper button {
+    padding: 13px 40px;
+    font-size: var(--size-text-big);
+    color: var(--color-white);
+    background: var(--color-blue);
+    border: none;
+    border-radius: 16px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.detail-lower_wrapper button:hover {
+    background: var(--color-yellow);
+    color: var(--color-dark);
+    transform: scale(0.9);
+}
