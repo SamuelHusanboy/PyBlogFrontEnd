@@ -557,6 +557,21 @@
     .detail-comment_item:nth-child(2) {
         margin-left: 0;
     }
+
+    .header_settings_list {
+        padding: 20px 0 !important;
+    }
+
+    .detail-hero {
+        margin-top: 100px;
+    }
+
+    .detail-post_wrapper,
+    .detail-related_posts,
+    .detail-comments,
+    .detail-lower_wrapper form {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
