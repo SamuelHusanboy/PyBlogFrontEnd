@@ -460,6 +460,23 @@
     .main-post_info_item.emoji_wrapp {
         display: none;
     }
+
+    .cat_detail-hero_list {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .cat_detail-hero_item:nth-child(2) {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .cat_detail-hero_item a {
+        width: 100%;
+        text-align: center;
+        position: static;
+        display: block;
+    }
 }
 
 
@@ -520,6 +537,14 @@
         margin: 0;
         margin-right: 10px;
         margin-top: 20px;
+    }
+
+    .cat_detail-hero_list {
+        padding: 30px;
+    }
+
+    .cat_detail-hero_item h1 i {
+        display: none;
     }
 }
 
