@@ -497,7 +497,7 @@ header.scrolled {
 }
 
 .main-posts {
-    padding-top: 50px;
+    padding-top: 5%;
 }
 
 .main-posts_item {
@@ -930,7 +930,7 @@ header.scrolled {
 }
 
 footer {
-    margin-top: 50px;
+    margin-top: 5%;
     padding: 30px 0 80px;
     background: var(--color-white);
 }
